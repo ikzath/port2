@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
 import "./Works.css";
 import Upwork from "../../img/Upwork.png";
-import Fiverr from "../../img/fiverr.png";
-import Amazon from "../../img/amazon.png";
+import Amazon from "../../img/amazon.jpg";
 import Shopify from "../../img/Shopify.png";
-import Facebook from "../../img/Facebook.png";
+import Facebook from "../../img/facebook.jpg";
+import ts from "../../img/ts.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import {Link} from 'react-scroll'
+import { Link } from "react-scroll";
 const Works = () => {
   // context
   const theme = useContext(themeContext);
@@ -20,19 +20,17 @@ const Works = () => {
       <div className="w-left">
         <div className="awesome">
           {/* dark Mode */}
-          <span style={{ color: darkMode ? "white" : "" }}>
-            Works for All these
-          </span>
-          <span>Brands & Clients</span>
+          <span style={{ color: darkMode ? "white" : "" }}>My Main -</span>
+          <span>Tech Stack</span>
           <spane>
-            Lorem ispum is simpley dummy text of printing of printing Lorem
+            I am pre-dominantly a Javacript Developer
             <br />
-            ispum is simpley dummy text of printingLorem ispum is simpley dummy
-            text
+            who is always looking out on learning new skills both soft & hard
+            ones,
             <br />
-            y dummy text of printingLorem
+            automations, artificial intelligence concepts
             <br />
-            ispum is simpley dummy text of printing
+            and the Web3 Blockchain Eco-System.
           </spane>
           <Link to="contact" smooth={true} spy={true}>
             <button className="button s-button">Hire Me</button>
@@ -57,7 +55,7 @@ const Works = () => {
             <img src={Upwork} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Fiverr} alt="" />
+            <img src={ts} alt="" />
           </div>
           <div className="w-secCircle">
             <img src={Amazon} alt="" />

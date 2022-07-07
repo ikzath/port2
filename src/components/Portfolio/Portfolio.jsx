@@ -1,11 +1,13 @@
 import React, { useContext } from "react";
 import "./Portfolio.css";
-import { Swiper, SwiperSlide } from "swiper/react"
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import Sidebar from "../../img/sidebar.png";
-import Ecommerce from "../../img/ecommerce.png";
-import HOC from "../../img/hoc.png";
-import MusicApp from "../../img/musicapp.png";
+import Amazon from "../../images/amazon-snap.png";
+import Netflix from "../../images/netflix.png";
+import Mern from "../../images/mern.png";
+import Gmail from "../../images/spacex.png";
+import Pathway from "../../images/pathway.png";
+import Nasa from "../../images/wildfire-snap.png";
 import { themeContext } from "../../Context";
 const Portfolio = () => {
   const theme = useContext(themeContext);
@@ -13,7 +15,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio" id="portfolio">
       {/* heading */}
-      <span style={{color: darkMode?'white': ''}}>Recent Projects</span>
+      <span style={{ color: darkMode ? "white" : "" }}>Recent Projects</span>
       <span>Portfolio</span>
 
       {/* slider */}
@@ -24,16 +26,24 @@ const Portfolio = () => {
         className="portfolio-slider"
       >
         <SwiperSlide>
-          <img src={Sidebar} alt="" />
+          <a href="https://github.com/ikzath">
+            <img src={Amazon} alt="" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Ecommerce} alt="" />
+          <img src={Netflix} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={MusicApp} alt="" />
+          <img src={Mern} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={HOC} alt="" />
+          <img src={Gmail} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Pathway} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Nasa} alt="" />
         </SwiperSlide>
       </Swiper>
     </div>

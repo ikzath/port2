@@ -39,16 +39,18 @@ const Intro = () => {
         </Link>
         {/* social icons */}
         <div className="i-icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
+          <a href="https://github.com/ikzath">
+            <img src={Github} alt="" />
+          </a>
+          <a href="https://www.linkedin.com/in/ikzath">
+            <img src={LinkedIn} alt="" />
+          </a>
         </div>
       </div>
       {/* right image side */}
       <div className="i-right">
-        <img src={Vector1} alt="https://github.com/ikzath" />
-        <img src={Vector2} alt="https://www.linkedin.com/in/ikzath/" />
-        {/* <img src={boy} alt="" /> */}
-        {/* animation */}
+        <img src={Vector1} alt="" />
+        <img src={Vector2} alt="" />
         <motion.img
           initial={{ left: "-36%" }}
           whileInView={{ left: "-24%" }}

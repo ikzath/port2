@@ -1,7 +1,6 @@
 import React from "react";
 import "./Footer.css";
 import Wave from "../../img/wave.png";
-import Gitub from "@iconscout/react-unicons/icons/uil-github";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
 
@@ -12,8 +11,20 @@ const Footer = () => {
       <div className="f-content">
         <span>Ikzath Kalanthar - 2022</span>
         <div className="f-icons">
-          <img src={Github} alt="" style={{ height: "54px" }} />
-          <img src={LinkedIn} alt="" style={{ height: "54px" }} />
+          <img
+            src={Github}
+            alt=""
+            style={{ height: "54px" }}
+            onClick={() => window.open("https://github.com/ikzath", "_blank")}
+          />
+          <img
+            src={LinkedIn}
+            alt=""
+            style={{ height: "54px" }}
+            onClick={() =>
+              window.open("https://www.linkedin.com/in/ikzath/", "_blank")
+            }
+          />
         </div>
       </div>
     </div>
